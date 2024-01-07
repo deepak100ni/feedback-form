@@ -4,7 +4,7 @@ const { uploadFiles } = require('../helper/multipart');
 const router = require('express').Router();
 
 
-router.post('/save', uploadFiles('public/uploads').single('file') ,saveQuestion);
+router.post('/save', saveQuestion);
 router.get('/list', list)
 
 module.exports = router

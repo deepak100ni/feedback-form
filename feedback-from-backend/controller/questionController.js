@@ -25,7 +25,7 @@ exports.saveQuestion = async (req, res) => {
       code: 500,
       status: false,
       data: [],
-      message: "Internal server error.",
+      message: "Internal server error."+error,
     });
   }
 };
